@@ -1,2 +1,3 @@
 # Twimba
-Twimba - Twitter clone
+
+## Twitter clone
