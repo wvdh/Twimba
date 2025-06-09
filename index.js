@@ -7,6 +7,11 @@ tweetBtn.addEventListener('click', function(){
     console.log(tweetInput.value)
 })
 
+document.addEventListener('click', function(e){
+    console.log('like', e.target.dataset.like)
+    console.log('retweet', e.target.dataset.retweet)
+})
+
 function getFeedHtml(){
         let feedHtml = ``
         tweetsData.forEach(function(tweet){
