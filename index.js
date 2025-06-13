@@ -15,7 +15,6 @@ document.addEventListener('click', function(e){
     else if(e.target.id === 'tweet-btn'){
         handleTweetBtnClick()
     }
-
 })
 
 function handleLikeClick(tweetId){
