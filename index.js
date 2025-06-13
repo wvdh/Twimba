@@ -54,7 +54,7 @@ function getFeedHtml(){
 
         if (tweet.replies.length > 0) {
             repliesHtml = tweet.replies.map(function(reply){
-                return `
+                repliesHtml+=`
                 <div class="tweet-reply">
                     <div class="tweet-inner">
                         <img src="${reply.profilePic}" class="profile-pic">
@@ -93,7 +93,7 @@ function getFeedHtml(){
                     </div>   
                 </div>            
             </div>
-            <div id="replies-${tweet.uuid}" class="replies">
+            <div id="replies-${tweet.uuid}" class="hidden">
                 ${repliesHtml}
             </div>
         </div>`
