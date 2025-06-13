@@ -50,6 +50,23 @@ function getFeedHtml(){
             retweetIconClass = 'retweeted'
         }
 
+        let repliesHtml = ''
+
+        if (tweet.replies.length > 0) {
+            repliesHtml = tweet.replies.map(function(reply){
+                return `
+                <div class="tweet-reply">
+                    <div class="tweet-inner">
+                        <img src="${reply.profilePic}" class="profile-pic">
+                        <div>
+                            <p class="handle">${reply.handle}</p>
+                            <p class="tweet-text">${reply.tweetText}</p>
+                        </div>
+                    </div>
+                </div>`
+            })
+        }        
+
         feedHtml += `
         <div class="tweet">
             <div class="tweet-inner">
@@ -75,6 +92,9 @@ function getFeedHtml(){
                         </span>
                     </div>   
                 </div>            
+            </div>
+            <div id="replies-${tweet.uuid}" class="replies">
+                ${repliesHtml}
             </div>
         </div>`
     })
