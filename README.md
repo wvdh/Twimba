@@ -12,15 +12,6 @@
 
 ---
 
-## ✨ Features
-
-- Post new tweets (with username/avatar placeholder)
-- Like/unlike tweets
-- Reply to tweets
-- Delete tweets
-- Tweet data is persisted in **LocalStorage**
-
----
 
 ## 📦 Tech Stack
 ```
@@ -29,7 +20,7 @@
 | Markup     | HTML5                          |
 | Styling    | CSS3 (with CSS Variables)      |
 | Logic      | Vanilla JavaScript (ES6+)      |
-| Storage    | Browser LocalStorage           |
+
 ```
 
 ---
