@@ -6,7 +6,7 @@ export const tweetsData = [
         retweets: 0,
         tweetText: `Scrimba - Frontend Developer Career Path. 💎` ,
         replies: [],
-        isLiked: true,
+        isLiked: false,
         isRetweeted: false,
         uuid: '3c23454ee-c0c5-6545-9c4b-856294422doc096',
     },   
