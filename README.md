@@ -1,6 +1,6 @@
 # Twimba 🚀 (Twitter clone)
 
-**Twimba** is a frontend-only Twitter clone and it’s a lightweight, standalone app written in vanilla JavaScript—no backend required.
+**Twimba** is a frontend-only Twitter clone and it’s a lightweight, standalone app written in vanilla JavaScript no backend required.
 ---
 
 ## 🌐 Live Demo
