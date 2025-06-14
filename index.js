@@ -1,8 +1,6 @@
 import { tweetsData } from './data.js'
 import { v4 as uuidv4 } from 'https://jspm.dev/uuid'
 
-const tweetInput = document.getElementById('tweet-input')
-
 document.addEventListener('click', function(e){
     if (e.target.dataset.like) {
         handleLikeClick(e.target.dataset.like)
@@ -38,12 +36,15 @@ function handleRetweetClick(tweetId){
 
 function handleReplyClick(replyId){
     const repliesDiv = document.getElementById(`replies-${replyId}`)
-    repliesDiv.classList.toggle('hidden')
+    if (repliesDiv) {
+        repliesDiv.classList.toggle('hidden')
+    }
 }
 
 function handleTweetBtnClick(){
-    if (tweetInput && tweetInput.value.trim() !== '') {
-        const newTweet = {
+    const tweetInput = document.getElementById('tweet-input')
+    if(tweetInput.value){
+        tweetsData.unshift({
             handle: `@Scrimba`,
             profilePic: `images/scrimbalogo.png`,
             likes: 0,
@@ -53,13 +54,12 @@ function handleTweetBtnClick(){
             isLiked: false,
             isRetweeted: false,
             uuid: uuidv4()
-        }
-        tweetsData.unshift(newTweet)
-        tweetInput.value = ''
-        render()
+        })
+    render()
+    tweetInput.value = ''
     }
 }
-
+ 
 function getFeedHtml(){
         let feedHtml = ``
         tweetsData.forEach(function(tweet){
@@ -128,7 +128,6 @@ function getFeedHtml(){
         
     })
     return feedHtml
-  
 }
 
 function render(){
