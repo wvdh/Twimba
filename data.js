@@ -1,4 +1,15 @@
-export const tweetsData = [   
+export const tweetsData = [
+        {
+        handle: `@Wvdh`,
+        profilePic: `images/avatar1.png`,
+        likes: 0,
+        retweets: 0,
+        tweetText: `Scrimba - Frontend Developer Career Path. 💎` ,
+        replies: [],
+        isLiked: true,
+        isRetweeted: false,
+        uuid: '3c23454ee-c0c5-6545-9c4b-856294422doc096',
+    },   
     {
         handle: `@TrollBot66756542 💎`,
         profilePic: `images/troll.jpg`,
