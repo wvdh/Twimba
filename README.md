@@ -38,7 +38,7 @@
 
 ---
 ## 📝 License
-This project is released under the MIT License — feel free to use, modify, and distribute it! See the LICENSE file for details.
+This project is released under the MIT License — feel free to use, modify, and distribute it!
 
 ---
 
