@@ -12,8 +12,8 @@
 
 ---
 
-
 ## 📦 Tech Stack
+
 ```
 | Layer      | Technology                     |
 |------------|--------------------------------|
@@ -46,5 +46,3 @@ This project is released under the MIT License — feel free to use, modify, and
 
 Created by **WvdH**    
 GitHub: [https://github.com/wvdh](https://github.com/wvdh)
-
-
