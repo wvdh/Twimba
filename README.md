@@ -29,7 +29,7 @@
 ```
 📁 twimba/
 ├── images/
-│   └── twimba.png   # Logo used in README
+│   └── twimba.png   # Image used in README.md
 ├── index.html       # Main app page
 ├── styles.css       # Dark theme + CSS variables
 ├── app.js           # Main JavaScript application logic
