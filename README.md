@@ -7,7 +7,7 @@
 
 **Frontend**: [https://wvdh.github.io/Twimba](https://wvdh.github.io/Twimba)
 
-![Twimba logo](images/twimba.png)
+![Twimba logo](images/twim.png)
 ---
 
 ## 📦 Tech Stack
